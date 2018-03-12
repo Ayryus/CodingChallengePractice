@@ -1,42 +1,32 @@
-package codingchallenge3;
-
-
-
-
 public abstract class Vehicle {
 	
-	private String model;
+	private String model = "";
 
 	
 	public Vehicle(String newModel) {
-		this.model.toUpperCase();
-		this.model = newModel;
+		this.model = newModel.toUpperCase();
 		
 	}
 	
 	public Vehicle(Vehicle toCopy) {
-		this.model = toCopy.model.toUpperCase();
-		
-		
+		this.model = toCopy.getModel().toUpperCase();
+	
 	}
 	
 	public String getModel() {
-		
-		return "h";
-		
+		return model.toUpperCase();
 	}
 	
 	
 	public void setModel(String newModel) {
 		
-		this.model.toUpperCase();
-		
+		this.model = newModel.toUpperCase();
 		
 	}
 	
 	public String toString() {
 		
-		return "Model:" + model + "Category: " + this.getCategory();
+		return "Model:" + model + "Category: " + getCategory();
 		
 	}
 	

@@ -1,18 +1,16 @@
-package codingchallenge3;
-
-public class Truck {
+public class Truck extends Vehicle {
 
 private int cargoCapacity;	
 
 public Truck(String newModel, int newCargoCapacity) {
-	
-	
+	super(newModel);
+	this.cargoCapacity = cargoCapacity;
 	
 }
 
 public Truck(Truck toCopy) {
 	
-	
+	this.cargoCapacity = toCopy.getCargoCapacity();
 }
 
 public void setCargoCapacity(int newCapacity) {

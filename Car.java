@@ -1,7 +1,5 @@
-package codingchallenge3;
 
-
-public class Car extends Vehicle{
+public class Car extends Vehicle {
 
 	private int noOfSeats;
 
@@ -42,7 +40,7 @@ public class Car extends Vehicle{
 	
 	public void setNoOfSeats(int newOfSeats) {
 		
-		if(newOfSeats >= 1 && newOfSeats <=8) {
+		if(newOfSeats >= 1 && newOfSeats <= 8) {
 			this.noOfSeats = newOfSeats;
 		}
 		
@@ -67,12 +65,12 @@ public class Car extends Vehicle{
 	
 	public String toString() {
 		
-		return 
+		return super.toString() + " Likes: " + noOfSeats;
 		
 	}
 
 	public String getModel() {
-		return "h";
+		return getModel();
 	}
 	
 	
